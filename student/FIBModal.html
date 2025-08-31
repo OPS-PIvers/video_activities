@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-blue: #005af0;
+      --primary-blue-dark: #004ecb;
+      --destructive-red: #d92d20;
+      --destructive-red-dark: #b9251a;
+      --neutral-gray: #f2f4f7;
+      --neutral-gray-dark: #e4e7ec;
+      --neutral-gray-text: #667085;
+      --neutral-gray-text-dark: #344054;
+      --success-green: #039855;
+      --warning-amber: #f79009;
+      --white: #ffffff;
+    }
+    .bg-primary-blue {
+      background-color: var(--primary-blue);
+    }
+    .hover\:bg-primary-blue-dark:hover {
+      background-color: var(--primary-blue-dark);
+    }
+    .text-primary-blue {
+      color: var(--primary-blue);
+    }
+    .border-primary-blue {
+      border-color: var(--primary-blue);
+    }
+    .bg-destructive-red {
+      background-color: var(--destructive-red);
+    }
+    .hover\:bg-destructive-red-dark:hover {
+      background-color: var(--destructive-red-dark);
+    }
+    .bg-neutral-gray {
+      background-color: var(--neutral-gray);
+    }
+    .hover\:bg-neutral-gray-dark:hover {
+      background-color: var(--neutral-gray-dark);
+    }
+    .text-neutral-gray-text {
+      color: var(--neutral-gray-text);
+    }
+    .text-neutral-gray-text-dark {
+      color: var(--neutral-gray-text-dark);
+    }
+    .border-neutral-gray-dark {
+      border-color: var(--neutral-gray-dark);
+    }
+    .bg-success-green {
+      background-color: var(--success-green);
+    }
+    .bg-warning-amber {
+      background-color: var(--warning-amber);
+    }
+    .bg-base-white {
+      background-color: var(--white);
+    }
+    .text-base-white {
+      color: var(--white);
+    }
+  </style>
+</head>
+<body class="relative flex size-full min-h-screen flex-col bg-base-white group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-neutral-gray-dark px-6 py-3">
+<div class="flex items-center gap-4 text-neutral-gray-text-dark">
+<div class="size-8 text-primary-blue">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-neutral-gray-text-dark text-xl font-bold leading-tight tracking-[-0.015em]">
+          StudyBuddy
+        </h2>
+</div>
+<div class="flex flex-1 justify-end gap-2">
+<div class="flex items-center justify-center pl-4">
+<button class="relative flex items-center justify-center size-10 rounded-full bg-neutral-gray text-neutral-gray-text-dark hover:bg-neutral-gray-dark">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+<div class="flex items-center justify-center pl-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2M27zCxOiRY42SRaBV0rirWx7Ypxm1pRROYK9vDmq-GTMAVSNozsKSMAuFr4w5oTZvBYKRX0x46N8Efr9h0ilpKxO3SZ8neq7mCGXzZir5f11RJSwysGoMWVYmD5BV_XyQJh4wqa__Q3pU46mxwLttqqu_13CR6xImTbgXJmIpYJdC9S_yt24zC8eoFuqUyIsds4FwCzv6aq1CylUM90AmFIzh9uJkKniawk4OOnvxJZLU_RHPvufS_U_x9hj5WTqqVCiIJ13dvfO");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col bg-neutral-gray">
+<div class="layout-content-container flex flex-col flex-1 w-full">
+<div class="flex flex-wrap items-center justify-between gap-4 p-6">
+<div class="flex min-w-72 flex-col gap-1">
+<div class="flex flex-wrap gap-2">
+<span class="text-neutral-gray-text text-sm font-medium leading-normal">Course: Introduction to Psychology</span>
+</div>
+<h1 class="text-neutral-gray-text-dark tracking-tight text-2xl font-bold leading-tight">
+              The Power of Habit
+            </h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-base-white text-neutral-gray-text-dark text-sm font-bold leading-normal tracking-[-0.015em] hover:bg-neutral-gray-dark border border-neutral-gray-dark">
+<span class="material-symbols-outlined mr-2">arrow_back</span>
+<span class="truncate">Back to Editor</span>
+</button>
+</div>
+</div>
+<div class="flex-1 px-6 pb-6">
+<div class="flex flex-col">
+<div class="relative flex items-center justify-center bg-neutral-gray-text-dark bg-cover bg-center aspect-video rounded-xl overflow-hidden shadow-lg">
+<img alt="Video thumbnail" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ28DzxlXQa82f2Q_QoC99m58SNsSCgrvVYT_SLxOlGgemvZGHPAqRhJCM0ogfHDBJCPDI7tvzMLzw6oeZpwDnU3mDrZyn76HLfGW2r7w7iB_dARtLNm1abqhKwv4tlMRE0nsCiEKuG_jhm9CDRF24ivV3eBvBK20lkbw8WNgF3k_FLuwB6982ug9bm1WNC1pUKlpPlCkMW8u7k6DKRqJRhcs0wlfLm4cH_P9i5aUuVk5bTyuqpfBH_N05GcqAERWj1JWs6N7RlvTc"/>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 p-8 bg-white/90 backdrop-blur-lg rounded-xl shadow-2xl w-[500px] max-w-[90%]">
+<div class="flex items-start justify-between mb-4">
+<span class="text-sm font-bold text-primary-blue bg-primary-blue/10 px-2 py-1 rounded-full">Question at 0:45</span>
+<button class="text-neutral-gray-text hover:text-neutral-gray-text-dark">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<h3 class="text-xl font-bold text-neutral-gray-text-dark mb-6">Fill in the blanks:</h3>
+<div class="flex flex-wrap items-center gap-x-2 gap-y-4 text-lg text-neutral-gray-text-dark">
+<span>The three stages of the habit loop are</span>
+<input class="form-input w-24 rounded-md border-neutral-gray-dark text-center focus:border-primary-blue focus:ring-primary-blue" placeholder="cue" type="text"/>
+<span>,</span>
+<input class="form-input w-24 rounded-md border-neutral-gray-dark text-center focus:border-primary-blue focus:ring-primary-blue" placeholder="routine" type="text"/>
+<span>, and</span>
+<input class="form-input w-24 rounded-md border-neutral-gray-dark text-center focus:border-primary-blue focus:ring-primary-blue" placeholder="reward" type="text"/>
+<span>.</span>
+</div>
+<button class="mt-8 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary-blue text-base-white text-sm font-bold leading-normal tracking-[-0.015em] hover:bg-primary-blue-dark">
+<span class="truncate">Submit</span>
+</button>
+</div>
+</div>
+<div class="relative w-full h-2 bg-neutral-gray-dark rounded-full cursor-pointer mt-2">
+<div class="absolute top-0 left-0 h-2 bg-primary-blue rounded-full" style="width: 25%;"></div>
+<div class="absolute h-full w-full flex items-center">
+<div class="absolute size-4 bg-primary-blue rounded-full border-2 border-white shadow" style="left: 25%;"></div>
+<div class="absolute flex flex-col items-center group" style="left: 8.33%;">
+<div class="size-2 bg-white rounded-full group-hover:scale-150 transition-transform"></div>
+</div>
+<div class="absolute flex flex-col items-center group" style="left: 50%;">
+<div class="size-2 bg-white rounded-full group-hover:scale-150 transition-transform"></div>
+</div>
+<div class="absolute flex flex-col items-center group" style="left: 66.67%;">
+<div class="size-2 bg-white rounded-full group-hover:scale-150 transition-transform"></div>
+</div>
+<div class="absolute flex flex-col items-center group" style="left: 91.67%;">
+<div class="size-2 bg-white rounded-full group-hover:scale-150 transition-transform"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
