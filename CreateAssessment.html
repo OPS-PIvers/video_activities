@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #0066ff;
+        --secondary-color: #f0f4f9;
+        --accent-color: #ff3366;
+        --success-color: #28a745;
+        --warning-color: #ffc107;
+        --text-primary: #1a202c;
+        --text-secondary: #4a5568;
+        --border-color: #e2e8f0;
+        --white-color: #ffffff;
+      }
+    </style>
+</head>
+<body class="bg-[var(--secondary-color)] text-[var(--text-primary)]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-[var(--border-color)] bg-[var(--white-color)] px-10 py-4">
+<div class="flex items-center gap-4 text-[var(--text-primary)]">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tighter">EduAssess</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="text-[var(--primary-color)] font-semibold" href="#">Assessments</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Courses</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full size-10 text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHgKvh1MZrThTwdziJn4QvBlF6rFEvswwh0F2cO7wtFRLfgOr-TqWRw3w1bEhcLEU1h-PxbaED84ECNZUGxFIkOJinDii5adI-pVmF3QwB1XjnbN7ttV6tlRt2QGbVhYCH9JroyaGY-oznwaxRC_VWnexodl4Zo0izxxSApMrwJ3E-S3QPah7jzAzjjdgsFnAqQVRf-1_yHYolI1eYqDdpYPFd7l1afc1GIJuGi0tqXuh2NMmAdyZlW2KeHaelfa3_nZeHd4p_E-o-");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 py-8 md:px-8 lg:px-16">
+<div class="mx-auto max-w-4xl">
+<div class="mb-8">
+<h1 class="text-3xl font-bold tracking-tight text-[var(--text-primary)]">New Video Assessment</h1>
+<p class="text-[var(--text-secondary)] mt-1">Create a new video assessment for your students.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+<div class="space-y-6">
+<section>
+<h2 class="text-xl font-semibold mb-4 border-b border-[var(--border-color)] pb-2">Assessment Details</h2>
+<div class="space-y-4">
+<label class="block">
+<p class="text-sm font-medium text-[var(--text-primary)] pb-1.5">Title</p>
+<input class="form-input w-full rounded-md border-[var(--border-color)] bg-[var(--white-color)] shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder-[var(--text-secondary)]" placeholder="e.g., Week 3: Marketing Pitch" type="text"/>
+</label>
+<label class="block">
+<p class="text-sm font-medium text-[var(--text-primary)] pb-1.5">Description</p>
+<textarea class="form-textarea w-full rounded-md border-[var(--border-color)] bg-[var(--white-color)] shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder-[var(--text-secondary)]" placeholder="A brief overview of the assessment." rows="3"></textarea>
+</label>
+<label class="block">
+<p class="text-sm font-medium text-[var(--text-primary)] pb-1.5">Due Date</p>
+<div class="relative">
+<input class="form-input w-full rounded-md border-[var(--border-color)] bg-[var(--white-color)] shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder-[var(--text-secondary)] pl-10" placeholder="Select a date" type="date"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-secondary)]">
+                          calendar_today
+                        </span>
+</div>
+</label>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-semibold mb-4 border-b border-[var(--border-color)] pb-2">Video Selection</h2>
+<div class="space-y-4">
+<label class="block">
+<p class="text-sm font-medium text-[var(--text-primary)] pb-1.5">YouTube Video URL</p>
+<input class="form-input w-full rounded-md border-[var(--border-color)] bg-[var(--white-color)] shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder-[var(--text-secondary)]" placeholder="https://www.youtube.com/watch?v=..." type="url"/>
+</label>
+</div>
+</section>
+</div>
+<div class="space-y-6">
+<section>
+<h2 class="text-xl font-semibold mb-4 border-b border-[var(--border-color)] pb-2">Instructions</h2>
+<div class="space-y-4">
+<label class="block">
+<p class="text-sm font-medium text-[var(--text-primary)] pb-1.5">General Instructions</p>
+<textarea class="form-textarea w-full rounded-md border-[var(--border-color)] bg-[var(--white-color)] shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder-[var(--text-secondary)]" placeholder="Provide clear instructions for students to complete the assessment." rows="5"></textarea>
+</label>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-semibold mb-4 border-b border-[var(--border-color)] pb-2">Grading Rubric</h2>
+<div class="space-y-4">
+<label class="block">
+<p class="text-sm font-medium text-[var(--text-primary)] pb-1.5">Rubric Criteria</p>
+<textarea class="form-textarea w-full rounded-md border-[var(--border-color)] bg-[var(--white-color)] shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] placeholder-[var(--text-secondary)]" placeholder="Define the criteria for grading. e.g., Clarity (10 pts), Content (15 pts)..." rows="5"></textarea>
+</label>
+</div>
+</section>
+</div>
+</div>
+<div class="mt-12 flex justify-end gap-4">
+<button class="flex min-w-[84px] items-center justify-center rounded-md h-10 px-4 text-sm font-semibold text-[var(--text-secondary)] bg-[var(--white-color)] hover:bg-[var(--secondary-color)] transition-colors border border-[var(--border-color)]">
+                Save Draft
+              </button>
+<button class="flex min-w-[84px] items-center justify-center rounded-md h-10 px-4 bg-[var(--primary-color)] text-[var(--white-color)] text-sm font-bold shadow-sm hover:brightness-95 transition-all">
+                Create Assessment
+              </button>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
