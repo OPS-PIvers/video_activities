@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+      --primary-50: #fefee6;
+      --primary-100: #fdfcce;
+      --primary-200: #fcf9a0;
+      --primary-300: #fbf671;
+      --primary-400: #f9f506;
+      --primary-500: #e0da05;
+      --primary-600: #b3ae04;
+      --primary-700: #868203;
+      --primary-800: #5a5702;
+      --primary-900: #2d2b01;
+    }
+    body {
+      font-family: 'Spline Sans', sans-serif;
+    }
+    .toggle-checkbox:checked {
+        @apply: bg-primary-400;
+        right: 0;
+    }
+    .toggle-checkbox:checked + .toggle-label {
+        @apply: bg-primary-400;
+    }
+    </style>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+</head>
+<body class="bg-gray-50">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
+<div class="p-6">
+<h1 class="text-xl font-bold text-gray-800">Assessment Tool</h1>
+</div>
+<nav class="flex-1 px-4 py-2 space-y-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-full hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">quiz</span>
+<span>Questions</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-full hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">description</span>
+<span>Content</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-full bg-primary-100 text-gray-900 font-semibold" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-full hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">visibility</span>
+<span>Preview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-full hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">publish</span>
+<span>Publish</span>
+</a>
+</nav>
+<div class="px-4 py-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-full hover:bg-gray-100 text-gray-600" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Exit</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<div class="max-w-4xl mx-auto">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-gray-800">Settings</h1>
+<p class="text-gray-500 mt-1">Adjust the settings for your video assessment.</p>
+</header>
+<div class="space-y-10">
+<div class="bg-white p-6 rounded-2xl border border-gray-200">
+<h2 class="text-lg font-semibold text-gray-800 mb-4">Video Playback</h2>
+<p class="text-gray-600 mb-6">Control what students can do with the assessment video.</p>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<label class="font-medium text-gray-700" for="playback-controls">Enable video playback controls</label>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="playback-controls" name="playback-controls" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="playback-controls"></label>
+</div>
+</div>
+<p class="text-sm text-gray-500">Allows students to pause, rewind, and fast-forward the video.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200">
+<h2 class="text-lg font-semibold text-gray-800 mb-4">Assessment Timing</h2>
+<p class="text-gray-600 mb-6">Set time limits for the assessment.</p>
+<div class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="timing-option">Timing Option</label>
+<select class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-300 focus:border-primary-300 transition duration-150 ease-in-out appearance-none bg-no-repeat bg-right pr-8" id="timing-option" name="timing-option" style="background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 20 20%27%3e%3cpath stroke=%27%236b7280%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%271.5%27 d=%27m6 8 4 4 4-4%27/%3e%3c/svg%3e');">
+<option>No time limit</option>
+<option>Time limit per question</option>
+<option>Overall assessment time limit</option>
+</select>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="time-limit-minutes">Time Limit (minutes)</label>
+<input class="mt-1 w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-300 focus:border-primary-300 transition duration-150 ease-in-out" id="time-limit-minutes" name="time-limit-minutes" placeholder="e.g., 5" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="time-limit-seconds">Time Limit (seconds)</label>
+<input class="mt-1 w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-300 focus:border-primary-300 transition duration-150 ease-in-out" id="time-limit-seconds" name="time-limit-seconds" placeholder="e.g., 30" type="number"/>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-gray-200">
+<h2 class="text-lg font-semibold text-gray-800 mb-4">Feedback &amp; Results</h2>
+<p class="text-gray-600 mb-6">Determine when and how students see their results.</p>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<label class="font-medium text-gray-700" for="immediate-feedback">Show immediate feedback after each question</label>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="immediate-feedback" name="immediate-feedback" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="immediate-feedback"></label>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<label class="font-medium text-gray-700" for="final-results">Display final results after assessment</label>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="final-results" name="final-results" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="final-results"></label>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="px-6 py-3 rounded-full bg-primary-400 text-gray-900 font-bold hover:bg-primary-500 transition-colors duration-200 ease-in-out flex items-center gap-2">
+<span class="material-symbols-outlined">save</span>
+                            Save Settings
+                        </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
